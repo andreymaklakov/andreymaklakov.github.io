@@ -27,3 +27,22 @@ Cтек разработки: typescript, react, sass/scss, vite(сборщик 
 5. Выполнить развертывание собранной страницы с помощью GitHub Pages Результат: 
    Исходный код в публичном Git репозитории, инструкция по сборке проекта, опубликованная страница на github pages.
 </pre>
+
+<h4>Инструкция по сборке</h4>
+
+### `git clone https://github.com/andreymaklakov/andreymaklakov.github.io.git`
+
+Клонирует проект.
+
+### `npm i`
+
+Установит все зависимости.
+
+### `npm run dev`
+
+Запустит проект в режиме разработки на http://localhost:PORT
+
+### `npm run build`
+
+Соберет проект в папке `build`.
+
