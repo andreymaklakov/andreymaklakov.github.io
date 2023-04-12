@@ -1,0 +1,13 @@
+.tasks_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+
+  .tasks_btns {
+    display: flex;
+    gap: 30px;
+  }
+}

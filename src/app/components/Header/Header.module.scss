@@ -1,0 +1,73 @@
+@import "../../../variables.scss";
+
+.header {
+  height: 60px;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 24px;
+  padding-right: 40px;
+
+  border-bottom: 1px solid rgba(0, 65, 102, 0.2);
+
+  nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    line-height: 19px;
+
+    a {
+      color: $secondaryTextColor;
+
+      > div {
+        position: relative;
+        top: 20px;
+        border-bottom: 2px solid $blueColor;
+      }
+    }
+
+    h4 {
+      font-weight: 700;
+      margin-right: 4px;
+      font-size: 18px;
+      color: $primaryTextColor;
+    }
+
+    .active {
+      color: $primaryTextColor;
+    }
+  }
+
+  .header_right_side {
+    display: flex;
+    gap: 28px;
+
+    .header_right_side_btns {
+      display: flex;
+      gap: 23px;
+      align-items: center;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.header_dark {
+  background-color: $darkThemeBackgroundDarkest;
+
+  a,
+  h4 {
+    color: $darkThemeTectColor !important;
+  }
+}

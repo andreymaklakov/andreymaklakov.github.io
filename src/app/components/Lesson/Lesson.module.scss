@@ -1,0 +1,140 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.lesson_content_big {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+
+  @media (width < 1150px) {
+    margin: 30px;
+  }
+
+  h2 {
+    font-size: 32px !important;
+    line-height: 48px;
+  }
+
+  p {
+    line-height: 24px;
+  }
+
+  .small_text {
+    color: $secondaryTextColor;
+    font-size: 14px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $secondaryTextColor;
+    }
+  }
+
+  button {
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}
+
+.lesson_content_small {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  p {
+    margin-top: 3px;
+    line-height: 21px;
+    font-size: 14px;
+  }
+
+  .small_text {
+    color: $secondaryTextColor;
+    font-size: 14px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $secondaryTextColor;
+    }
+  }
+
+  .low_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+
+    div {
+      font-size: 14px;
+
+      span {
+        color: $secondaryTextColor;
+        position: relative;
+        font-size: 14px;
+
+        span {
+          position: absolute;
+          left: 0;
+        }
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .completed {
+          @include completed(1px, 24px, 2px);
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+  }
+}
+
+.lesson_content_dark {
+  .small_text {
+    color: $darkThemeTectColor;
+
+    span {
+      background-color: $darkThemeTectColor;
+    }
+  }
+
+  .low_line {
+    div {
+      span {
+        color: $darkThemeTectColor;
+      }
+    }
+  }
+}

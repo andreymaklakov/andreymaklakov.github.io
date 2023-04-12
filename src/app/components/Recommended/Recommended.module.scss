@@ -1,0 +1,51 @@
+@import "../../../mixins.scss";
+@import "../../../variables.scss";
+
+.recommended_container {
+  h2 {
+    font-size: 24px;
+  }
+
+  .recommended_block {
+    @include block();
+
+    min-height: 248px;
+    width: 100%;
+    margin-top: 27px;
+    padding-right: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 7%;
+
+    @media (width < 1150px) {
+      flex-direction: column;
+
+      .completed {
+        margin: 30px;
+      }
+    }
+
+    .completed {
+      @include completed(7%, 170px, 16px);
+
+      .completed_content {
+        z-index: 2;
+        text-align: center;
+
+        h4 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+          color: $secondaryTextColor;
+        }
+      }
+    }
+  }
+
+  .recommended_block_dark {
+    background-color: $darkThemeBackgroundDarkest;
+  }
+}

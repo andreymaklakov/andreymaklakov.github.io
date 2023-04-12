@@ -1,0 +1,36 @@
+.suggestions {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  top: 42px;
+
+  display: none;
+
+  > div {
+    padding: 5px;
+
+    &:hover {
+      background-color: #e6e6e6;
+      cursor: pointer;
+    }
+
+    .secondary_data {
+      color: gray;
+    }
+  }
+
+  &.suggestions_shown {
+    display: block;
+  }
+}
+
+.suggestions_dark {
+  background-color: rgb(179, 179, 179);
+
+  div {
+    p {
+      color: black;
+    }
+  }
+}

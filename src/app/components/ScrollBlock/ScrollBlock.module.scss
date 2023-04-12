@@ -1,0 +1,72 @@
+@import "../../../variables.scss";
+
+.block {
+  width: 100%;
+  background: rgba(0, 32, 51, 0.05);
+  border-radius: 8px;
+  padding: 32px 0;
+
+  margin-top: 40px;
+
+  .block_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-left: 32px;
+
+    .block_header_heading {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      @media (width < 850px) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    .block_header_btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-right: 32px;
+    }
+  }
+
+  .block_cards {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    position: relative;
+    margin-left: 32px;
+
+    overflow-x: hidden;
+  }
+}
+
+.block_dark {
+  background-color: rgb(40, 40, 40);
+
+  .block_header_heading {
+    button {
+      color: $darkThemeTectColor;
+      background-color: $darkThemeTertiaryBtnBg;
+    }
+  }
+
+  .block_header_btns {
+    button {
+      background-color: $darkThemeTertiaryBtnBg;
+      border-radius: 50%;
+
+      height: 32px;
+    }
+  }
+}

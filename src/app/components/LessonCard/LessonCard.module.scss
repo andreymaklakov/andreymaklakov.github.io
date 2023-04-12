@@ -1,0 +1,22 @@
+@import "../../../mixins.scss";
+@import "../../../variables.scss";
+
+.card {
+  @include block();
+
+  min-width: 464px;
+  min-height: 260px;
+  max-width: 464px;
+  max-height: 260px;
+  background: #fff;
+
+  padding: 32px;
+
+  &:last-child {
+    margin-right: 32px;
+  }
+}
+
+.card_dark {
+  background-color: $darkThemeBackgroundDarkest;
+}

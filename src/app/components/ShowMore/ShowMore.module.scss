@@ -1,0 +1,39 @@
+@import "../../../variables.scss";
+
+.show_more_container {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    width: 50%;
+    border-top: 1px solid rgba(0, 65, 102, 0.2);
+    height: 0;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: fit-content;
+
+    span {
+      color: $tertiaryTextColor;
+      font-size: 14px;
+    }
+  }
+}
+
+.show_more_container_dark {
+  > div {
+    border-top: 1px solid $darkThemeTectColor;
+  }
+
+  button {
+    color: $darkThemeTectColor;
+    background-color: $darkThemeTertiaryBtnBg;
+  }
+}
